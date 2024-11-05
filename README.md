@@ -1,42 +1,37 @@
 # Admission-Prediction-using-ML
 
-Objective:
-The project aims to predict the likelihood of a student's admission to various colleges based on their academic performance metrics and rankings.
+1. Objective: -> The project aims to predict the likelihood of a student's admission to various colleges based on their academic metrics and rankings.
 
-Data Used:
-The dataset comprises several key columns, including:
+2.Data Used:
 
-10th Marks: Scores obtained in 10th-grade exams.
-12th Marks: Scores obtained in 12th-grade exams.
-12th Division: Division ranking in 12th grade.
-AIEEE Rank: Rank from the All India Engineering Entrance Examination.
-College: The target label indicating which college the student may gain admission to.
-Data Preprocessing:
-Data preprocessing involves encoding categorical variables, such as college names, and separating the dataset into features (X) and target labels (y). Label encoding is applied to convert college names into numerical codes, making them compatible with machine learning models.
+. The dataset includes columns such as: . 10th Marks: Scores in 10th-grade exams. . 12th Marks: Scores in 12th-grade exams. . 12th Division: Division ranking in 12th grade. . AIEEE Rank: All India Engineering Entrance Examination rank. . College: Target label for predicting which college the student may get admitted to.
 
-Exploratory Data Analysis (EDA):
-Visualization techniques, including histograms and density plots, are utilized to analyze the distribution of student marks and rankings. Plots are created for features such as 10th marks, 12th marks, 12th division, and AIEEE rank.
+3.Data Preprocessing:
 
-Machine Learning Models Used:
-The project employs the following models:
+. The data is preprocessed by encoding categorical variables (like college names) and separating features (X) and target labels (y). . Label encoding is used to convert college names into numerical codes for compatibility with machine learning models.
 
-XGBoost Classifier: A gradient boosting classifier optimized for multi-class classification to predict admission probabilities for multiple colleges.
-Decision Tree Classifier: A simpler model used as a comparative alternative to XGBoost to evaluate accuracy and efficiency.
-Model Evaluation:
-The models are assessed based on their accuracy scores on test data. The Decision Tree Classifier demonstrated a higher accuracy of 96% compared to the XGBoost Classifier, which achieved 75%.
+4.Exploratory Data Analysis (EDA):
 
-Prediction Functionality:
-The project features a functionality that allows users to input their academic details to predict college admissions. For instance, by entering values such as 10th and 12th marks, division, and AIEEE rank, the model can forecast the likely college for admission.
+. Visualization techniques (e.g., histograms and density plots) are used to analyze the distribution of student marks and ranks. . Plots are created for features like 10th marks, 12th marks, 12th division, and AIEEE rank.
 
-Results Visualization:
-A confusion matrix is utilized to visualize the comparison between predicted and actual outcomes, providing insights into model performance across different colleges.
+5.Machine Learning Models Used:
+
+. XGBoost Classifier: A gradient boosting classifier, tuned for multi-class classification, to predict admission probability across multiple colleges. . Decision Tree Classifier: A simpler model used as an alternative to XGBoost for comparison of accuracy and efficiency.
+
+6.Model Evaluation:
+
+. Models are evaluated based on their accuracy scores on the test data. . The Decision Tree Classifier achieved a higher accuracy (96%) compared to the XGBoost Classifier (75%).
+
+7.Prediction Functionality:
+
+. The project includes functionality to predict college admission based on user-inputted academic details. . For example, based on inputs like 10th and 12th marks, division, and AIEEE rank, the model predicts the probable college for admission.
+
+8.Results Visualization:
+
+. The project uses a confusion matrix to compare predicted versus actual outcomes, allowing for a visual understanding of model performance across colleges.
 
 Libraries and Tools:
-The project employs several Python libraries, including:
+-> The project utilizes several Python libraries, including: . pandas and numpy for data handling. . matplotlib and seaborn for visualization. . scikit-learn for model building and evaluation. . XGBoost for implementing the XGBoost Classifier.
 
-pandas and numpy for data manipulation.
-matplotlib and seaborn for data visualization.
-scikit-learn for building and evaluating models.
-XGBoost for implementing the XGBoost Classifier.
 Conclusion:
-This project showcases a machine learning approach to predicting college admissions based on academic records. It emphasizes the comparison between different models and illustrates how these predictions can assist prospective students in their decision-making process.
+. The project demonstrates a machine learning approach to predict college admissions based on academic records. . It highlights the comparison between different models and shows how these predictions can aid in decision-making for prospective students.
